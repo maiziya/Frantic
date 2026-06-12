@@ -108,7 +108,7 @@ export default function FAQ() {
             FAQs
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Questions, <span className="text-primary">answered.</span>
+            Frequently asked <span className="text-primary">questions.</span>
           </h2>
         </div>
 

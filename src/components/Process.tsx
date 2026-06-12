@@ -27,7 +27,7 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <section className="py-32 bg-muted/20">
+    <section className="py-32 bg-cream text-cream-foreground">
       <div className="container mx-auto px-6">
         <div className="mb-16 max-w-4xl">
           <p className="text-xs text-primary tracking-[0.2em] uppercase mb-4">
@@ -39,28 +39,27 @@ export default function Process() {
           </h2>
         </div>
 
-        <div className="flex flex-wrap gap-8">
+        <div className="flex flex-wrap gap-y-12 border-t border-cream-foreground/15">
           {processSteps.map((step, index) => (
             <div
               key={step.number}
-              className="group relative p-8 bg-background border border-border hover:border-primary/50 transition-all duration-500 hover-lift w-full md:w-[calc(50%_-_1rem)] lg:w-[calc(25%_-_1.5rem)]"
+              className="group relative px-6 pt-8 border-l border-cream-foreground/15 w-full md:w-1/2 lg:w-1/4"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <span className="absolute top-4 left-6 text-[120px] font-bold text-muted/20 group-hover:text-primary/10 transition-colors duration-500 leading-none">
+              <span className="absolute top-4 right-4 text-[120px] font-bold text-cream-foreground/5 leading-none pointer-events-none">
                 {step.number}
               </span>
-              <div className="relative z-10 pt-16">
+              <div className="relative z-10">
                 <p className="text-xs text-primary tracking-widest mb-4">
                   {step.number}. {step.label}
                 </p>
-                <h3 className="text-2xl font-bold mb-6 text-foreground leading-tight">
+                <h3 className="text-2xl font-bold mb-6 text-cream-foreground leading-tight">
                   {step.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-cream-foreground/60 leading-relaxed">
                   {step.description}
                 </p>
               </div>
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-700" />
             </div>
           ))}
         </div>

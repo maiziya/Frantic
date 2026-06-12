@@ -1,4 +1,4 @@
-import { Play, ArrowRight } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Hero() {
@@ -22,9 +22,8 @@ export default function Hero() {
             // Animation Studio in London, UK
           </p>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 animate-slide-up">
-            Obsession made{' '}
-            <span className="text-primary">real.</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 animate-slide-up whitespace-nowrap">
+            Obsession made <span className="text-primary">real.</span>
           </h1>
 
           <div className="space-y-2 mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -56,24 +55,7 @@ export default function Hero() {
                 <Play size={16} className="ml-2 group-hover:scale-110 transition-transform" />
               </Button>
             </a>
-            <a href="#">
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-border hover:border-primary text-foreground hover:text-primary px-8 py-6 text-sm font-semibold tracking-wider group transition-all duration-300"
-              >
-                EXPLORE WORK
-                <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>

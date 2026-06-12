@@ -28,6 +28,8 @@
   --color-popover-foreground: #ffffff;
   --color-secondary: #1a1a1a;
   --color-secondary-foreground: #ffffff;
+  --color-cream: #f5f1ea;
+  --color-cream-foreground: #0a0a0a;
 
   --breakpoint-sm: 360px;
   --breakpoint-md: 768px;
